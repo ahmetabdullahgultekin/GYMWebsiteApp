@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="WebApplication1.HomePage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="WebApplication.HomePage" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +32,7 @@
 
             background: linear-gradient(225deg,#0000 18.75%,white 0 31.25%,#0000 0), repeating-linear-gradient(135deg,wheat -6.25% 6.25%,white 0 18.75%);
             background-size: var(--s) var(--s);
+            
             animation: backgroundfly;
             animation-timing-function: linear;
             animation-duration: 60s;
