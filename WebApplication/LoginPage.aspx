@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atmaca GYM Management System Login Page</title>
@@ -37,6 +37,7 @@
             animation-timing-function: linear;
             animation-duration: 60s;
             animation-iteration-count: infinite;
+
             margin: 0;
             padding: 0;
             display: flex;
