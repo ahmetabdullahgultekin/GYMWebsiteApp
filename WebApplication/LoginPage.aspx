@@ -187,7 +187,7 @@
         <input type="password" id="inputpassword" name="password"
             placeholder="ersingym123" maxlength="25"
             autocomplete="on" required runat="server">
-        <button type="submit" onserverclick="btnLogin_Click" id="btnLogin" runat="server">Login System</button>
+        <button type="submit" onserversubmit="btnLogin_Click" id="btnLogin" runat="server">Login System</button>
     </form>
     <h1 runat="server">ATMACA<br>GYM<br>MANAGEMENT<br>SYSTEM</h1>
 </body>

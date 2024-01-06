@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
     <style>
         * {
             -webkit-user-select: none; /* Safari */
@@ -61,17 +64,16 @@
 </head>
 <body>
     <ul id="navbar" runat="server">
-        <li><a class="active" href="#home">Home</a></li>
+        <li><a class="active" href="Home.aspx">Home</a></li>
 
-        <li><a href="#members">Members</a></li>
-        <li><a href="#staffs">Staffs</a></li>
-        <li><a href="#equipments">Equipments</a></li>
-        <li><a href="#sales">Sales</a></li>
-        <li><a href="#Finance">Finance</a></li>
+        <li><a href="Members.aspx">Members</a></li>
+        <li><a href="Staffs.aspx">Staffs</a></li>
+        <li><a href="Equipments.aspx">Equipments</a></li>
+        <li><a href="Sales.aspx">Sales</a></li>
+        <li><a href="Finance.aspx">Finance</a></li>
     </ul>
 
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
     </asp:ContentPlaceHolder>
 </body>
 </html>

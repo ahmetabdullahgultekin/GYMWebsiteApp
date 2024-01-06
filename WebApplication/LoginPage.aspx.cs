@@ -16,13 +16,13 @@ namespace WebApplication
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (lblUserName.InnerText == null || lblPassword.InnerText == null)
+            if (lblUserName.InnerText.Length<3 || lblPassword.InnerText.Length<3)
             {
-                lblUserName.InnerText = "Please enter a username and password";
+                lblUserName.InnerText = "Please enter an username and password!";
             }
             else
             {
-                Response.Redirect("~/MainPage.aspx");
+                Response.Redirect("~/Home.aspx");
             }
             /*
             //Check login credentials
@@ -37,7 +37,6 @@ namespace WebApplication
                 lblError.Text = "Invalid username or password";
             }
             */
-            Response.Redirect("~/MainPage.aspx");
         }
 
     }
