@@ -28,25 +28,45 @@
             height: 100vh;
         }
 
-        form {
-            background-color: blue;
-            height: 100vh;
-            margin:0 auto;
-            border: 1px solid #f1f1f1;
-            border-radius: 5px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: red;
+            position: fixed;
+            left: 0;
+            height: 100%;
+            overflow: auto;
         }
 
+        li a {
+            display: block;
+            color: green;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+            li a.active {
+                background-color: blue;
+                color: white;
+            }
+
+            li a:hover:not(.active) {
+                background-color: orange;
+                color: white;
+            }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <asp:ListBox ID="ListBox1" runat="server">
-            <asp:ListItem>Members</asp:ListItem>
-            <asp:ListItem>Staffs</asp:ListItem>
-            <asp:ListItem>Equipments</asp:ListItem>
-            <asp:ListItem>Sales</asp:ListItem>
-            <asp:ListItem>Finance</asp:ListItem>
-        </asp:ListBox>
-    </form>
+    <ul id="navbar" runat="server">
+        <li><a class="active" href="#home">Home</a></li>
+
+        <li><a href="#members">Members</a></li>
+        <li><a href="#staffs">Staffs</a></li>
+        <li><a href="#equipments">Equipments</a></li>
+        <li><a href="#sales">Sales</a></li>
+        <li><a href="#Finance">Finance</a></li>
+    </ul>
 </body>
 </html>
