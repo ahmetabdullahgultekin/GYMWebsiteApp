@@ -180,15 +180,15 @@
     <form id="form1" runat="server">
         <label for="username" id="lblUserName" runat="server">Username</label>
         <input type="text" id="inputusername" name="username"
-            placeholder="Ersin123" maxlength="25"
+            placeholder="Ersin123" maxlength="25" value=""
             autocomplete="on" required runat="server">
 
         <label for="password" id="lblPassword" runat="server">Password </label>
         <input type="password" id="inputpassword" name="password"
-            placeholder="ersingym123" maxlength="25"
+            placeholder="ersingym123" maxlength="25" value="1000"
             autocomplete="on" required runat="server">
-        <button type="submit" onserversubmit="btnLogin_Click" id="btnLogin" runat="server">Login System</button>
+        <button type="submit" onserverclick="btnLogin_Click" id="btnLogin" runat="server">Login System</button>
     </form>
-    <h1 runat="server">ATMACA<br>GYM<br>MANAGEMENT<br>SYSTEM</h1>
+    <h1 runat="server">ATMACA<br >GYM<br>MANAGEMENT<br>SYSTEM</h1>
 </body>
 </html>

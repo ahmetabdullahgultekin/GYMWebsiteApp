@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows.Forms;
 
 namespace WebApplication
 {
@@ -16,12 +17,13 @@ namespace WebApplication
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (lblUserName.InnerText.Length<3 || lblPassword.InnerText.Length<3)
+            if (inputusername.Value.Equals("") || inputpassword.Value.Equals(""))
             {
-                lblUserName.InnerText = "Please enter an username and password!";
+                
             }
             else
             {
+                btnLogin.InnerText = "Redirecting...";
                 Response.Redirect("~/Home.aspx");
             }
             /*

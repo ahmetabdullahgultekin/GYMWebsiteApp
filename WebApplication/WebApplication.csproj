@@ -207,6 +207,7 @@
     <Content Include="LoginPage.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Members.aspx" />
+    <Content Include="Sales.aspx" />
     <Content Include="Staffs.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -250,6 +251,13 @@
       <DependentUpon>Members.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales.aspx.cs">
+      <DependentUpon>Sales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales.aspx.designer.cs">
+      <DependentUpon>Sales.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
