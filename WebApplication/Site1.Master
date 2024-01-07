@@ -61,12 +61,16 @@
             }
 
         .topnav {
+
+            width: 100%;
             overflow: hidden;
             background-color: blanchedalmond;
+            display: block;
+            top: 0;
         }
 
             .topnav a {
-                float: left;
+                float: right;
                 color: black;
                 text-align: center;
                 padding: 10px 15px;
