@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-
     </asp:ContentPlaceHolder>
 
     <style>
@@ -16,8 +15,8 @@
             -webkit-user-select: none; /* Safari */
             -ms-user-select: none; /* IE 10 and IE 11 */
             user-select: none; /* Standard syntax */
-            font-family: Papyrus, Ariel, sans-serif;
-            font-weight: bold;
+            font-family: Ariel, sans-serif;
+            font-weight: normal;
             font-size: 20px;
             text-align: center;
         }
@@ -38,7 +37,7 @@
             margin: 0;
             padding: 0;
             width: 20%;
-            background-color: red;
+            background-color: blanchedalmond;
             position: fixed;
             left: 0;
             top: 0;
@@ -48,33 +47,53 @@
 
         li a {
             display: block;
-            color: green;
-            padding: 8px 16px;
+            color: black;
+            border-bottom-color: white;
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            padding: 15px 20px;
             text-decoration: none;
         }
 
-            li a.active {
-                background-color: blue;
+            li a:hover {
+                background-color: black;
                 color: white;
             }
 
-            li a:hover:not(.active) {
-                background-color: orange;
-                color: white;
+        .topnav {
+            overflow: hidden;
+            background-color: blanchedalmond;
+        }
+
+            .topnav a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 10px 15px;
+                text-decoration: none;
             }
+
+                .topnav a:hover {
+                    background-color: black;
+                    color: white;
+                }
     </style>
 </head>
 <body>
-    <ul id="navbar" runat="server">
-        <li><a class="active" href="Home.aspx">Home</a></li>
+    <div class="topnav">
+        <a href="#Add">Add</a>
+        <a href="#Update">Update</a>
+        <a href="#Remove">Remove</a>
+    </div>
 
+    <ul id="navbar" runat="server">
+        <li><a href="Home.aspx">Home</a></li>
         <li><a href="Members.aspx">Members</a></li>
         <li><a href="Staffs.aspx">Staffs</a></li>
         <li><a href="Equipments.aspx">Equipments</a></li>
         <li><a href="Sales.aspx">Sales</a></li>
         <li><a href="Finance.aspx">Finance</a></li>
     </ul>
-
     <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
     </asp:ContentPlaceHolder>
 </body>

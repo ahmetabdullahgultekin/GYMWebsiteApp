@@ -6,7 +6,7 @@
             -webkit-user-select: none; /* Safari */
             -ms-user-select: none; /* IE 10 and IE 11 */
             user-select: none; /* Standard syntax */
-            font-family: Papyrus, Ariel, sans-serif;
+            font-family: Ariel, sans-serif;
             font-weight: bold;
             font-size: 20px;
             text-align: center;
