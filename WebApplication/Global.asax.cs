@@ -11,10 +11,10 @@ namespace WebApplication
 {
     public class Global : System.Web.HttpApplication
     {
+        public static string connectionStr;
+        public static SqlConnection connection;
         protected void Application_Start(object sender, EventArgs e)
         {
-            string connectionStr;
-            SqlConnection connection;
             connectionStr = @"Data Source=MORDECAI;Initial Catalog=GYM;Trusted_Connection=True;";
             connection = new SqlConnection(connectionStr);
             connection.Open();
