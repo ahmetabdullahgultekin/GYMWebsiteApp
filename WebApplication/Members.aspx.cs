@@ -33,7 +33,7 @@ namespace WebApplication1
 
             SqlConnection con = WebApplication.Global.connection;
             DataSet ds = new DataSet();
-            string sqlstr = "select * from Person";
+            string sqlstr = "select * from ActiveMembers";
 
             SqlDataAdapter da = new SqlDataAdapter(sqlstr, WebApplication.Global.connection);
             da.Fill(ds);
@@ -41,7 +41,6 @@ namespace WebApplication1
             GridView1.DataSource = ds;
             GridView1.DataBind();
             con.Close();
-
         }
     }
 }

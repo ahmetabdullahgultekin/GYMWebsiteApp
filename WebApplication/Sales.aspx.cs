@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +13,16 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            SqlConnection con = WebApplication.Global.connection;
+            DataSet ds = new DataSet();
+            string sqlstr = "select * from Sale";
 
+            SqlDataAdapter da = new SqlDataAdapter(sqlstr, WebApplication.Global.connection);
+            da.Fill(ds);
+
+            GridView1.DataSource = ds;
+            GridView1.DataBind();
+            con.Close();
         }
     }
 }

@@ -37,10 +37,11 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            width: 25%;
+            width: 20%;
             background-color: red;
             position: fixed;
             left: 0;
+            top: 0;
             height: 100%;
             overflow: auto;
         }
