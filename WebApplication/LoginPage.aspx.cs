@@ -17,14 +17,14 @@ namespace WebApplication
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (inputusername.Value.Equals("") || inputpassword.Value.Equals(""))
-            {
-                
-            }
-            else
+            if (inputusername.Value.Equals("a") || inputpassword.Value.Equals("b"))
             {
                 btnLogin.InnerText = "Redirecting...";
                 Response.Redirect("~/Home.aspx");
+            }
+            else
+            {
+            
             }
             /*
             //Check login credentials

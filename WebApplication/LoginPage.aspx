@@ -32,15 +32,13 @@
 
             background: linear-gradient(225deg,#0000 18.75%,white 0 31.25%,#0000 0), repeating-linear-gradient(135deg,wheat -6.25% 6.25%,white 0 18.75%);
             background-size: var(--s) var(--s);
-            
             animation: backgroundfly;
             animation-timing-function: linear;
             animation-duration: 60s;
             animation-iteration-count: infinite;
-
+            display: flex;
             margin: 0;
             padding: 0;
-            display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -72,21 +70,18 @@
             --s: 25px; /* control the size */
             background: linear-gradient(225deg,#0000 18.75%,white 0 31.25%,#0000 0), repeating-linear-gradient(135deg,wheat -6.25% 6.25%,white 0 18.75%);
             background-size: var(--s) var(--s);
-
             border-radius: 50px;
             border-color: white;
             border-width: 3px;
             border-style: ridge;
             box-shadow: 20px 20px 50px rgba(0, 0, 0, 1);
-
             max-width: 400px;
             width: 80%;
             padding: 50px;
-            display: block;
+            display: inline-block;
             justify-content: center;
             align-items: center;
             margin-right: 20px;
-
             animation: revealform normal ease-in-out 2s 1, formfly linear 60s infinite;
         }
 
@@ -104,13 +99,13 @@
 
         h1 {
             color: white;
-            max-width: 400px;
+            max-width: 500px;
             width: 100%;
-            display: block;
+            display: inline-block;
             text-shadow: 5px 5px 1px black;
             font-size: 50px;
             margin-left: 20px;
-
+            text-align: center;
             animation-name: revealh1;
             animation-direction: normal;
             animation-timing-function: ease-in-out;
@@ -126,7 +121,6 @@
             border-width: 3px;
             border-style: solid;
             border-radius: 20px;
-
             background-color: rgba(255, 232, 189, 0.9);
             color: white;
             font-size: 20px;
@@ -187,8 +181,12 @@
         <input type="password" id="inputpassword" name="password"
             placeholder="ersingym123" maxlength="25" value="1000"
             autocomplete="on" required runat="server">
-        <button type="submit" onserverclick="btnLogin_Click" id="btnLogin" runat="server">Login System</button>
+        <button type="button" onserverclick="btnLogin_Click" id="btnLogin" runat="server">Login System</button>
     </form>
-    <h1 runat="server">ATMACA<br >GYM<br>MANAGEMENT<br>SYSTEM</h1>
+    <h1 runat="server">ATMACA<br>
+        GYM<br>
+        MANAGEMENT<br>
+        SYSTEM<br />
+    </h1>
 </body>
 </html>
