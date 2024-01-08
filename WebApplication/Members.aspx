@@ -2,23 +2,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        * {
-            -webkit-user-select: none; /* Safari */
-            -ms-user-select: none; /* IE 10 and IE 11 */
-            user-select: none; /* Standard syntax */
-            font-family: Ariel, sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            text-align: center;
-        }
 
         form {
-            margin-top: 50px;
+            margin-top: 10%;
             margin-left: 25%;
             margin-right: 5%;
             max-height: 100vh;
+            max-width: 60%;
+            width: 50%;
             padding: 20px;
-            right: 20px;
+            right: 50px;
         }
 
         #GridView1 {

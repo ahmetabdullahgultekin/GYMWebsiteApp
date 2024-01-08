@@ -17,9 +17,16 @@ namespace WebApplication
         {
             connectionStr = @"Data Source=MORDECAI;Initial Catalog=GYM;Trusted_Connection=True;";
             connection = new SqlConnection(connectionStr);
-            connection.Open();
-            MessageBox.Show("Connection Successfully Opened!");
-            connection.Close();
+
+            try
+            {
+                connection.Open();
+                MessageBox.Show("Connection Successfully Opened!");
+            }
+            catch {
+                connection.Close();
+                throw;
+            }
         }
     }
 }
