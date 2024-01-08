@@ -201,6 +201,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddMember.aspx" />
     <Content Include="Equipments.aspx" />
     <Content Include="Finance.aspx" />
     <Content Include="Global.asax" />
@@ -212,6 +213,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMember.aspx.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMember.aspx.designer.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Equipments.aspx.cs">
       <DependentUpon>Equipments.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
