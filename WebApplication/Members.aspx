@@ -17,7 +17,7 @@
         #GridView1 {
             max-width: 100%;
             width: 100%;
-            margin-top: 50px;
+            margin-top: 100px;
         }
 
     </style>
