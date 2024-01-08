@@ -4,20 +4,19 @@
     <style>
 
         form {
-            margin-top: 10%;
+            margin-top: 250px;
             margin-left: 25%;
             margin-right: 5%;
             max-height: 100vh;
             max-width: 60%;
-            width: 50%;
-            padding: 20px;
-            right: 50px;
+            width: 60%;
+            display: block;
         }
 
         #GridView1 {
             max-width: 100%;
             width: 100%;
-            margin-top: 100px;
+            display: block;
         }
 
     </style>
@@ -27,9 +26,9 @@
     <main>
         <form id="form2" runat="server">
             <p>
-                <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+                <asp:GridView ID="GridView1" runat="server" BackColor="blanchedalmond" BorderColor="black" BorderStyle="None" BorderWidth="1px" CellPadding="10" ForeColor="black" GridLines="Horizontal">
                     <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                    <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="orange" Font-Bold="True" ForeColor="White" />
                     <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
                     <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
                     <SortedAscendingCellStyle BackColor="#F7F7F7" />

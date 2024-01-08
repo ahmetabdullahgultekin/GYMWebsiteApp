@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows.Forms;
 
 namespace WebApplication1
 {
@@ -14,33 +15,25 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
-            string connectionString = ConfigurationManager.ConnectionStrings["conStr"].ToString();
-
-            SqlConnection con = new SqlConnection(connectionString);
-
+            SqlConnection connection = new SqlConnection(WebApplication.Global.connectionStr);
             try
             {
-                con.Open();
+                connection.Open();
             }
-            catch (Exception)
+            catch
             {
-                con.Close();
-                return;
+                connection.Close();
                 throw;
             }
-            */
 
-            SqlConnection con = WebApplication.Global.connection;
-            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
             string sqlstr = "select * from ActiveMembers";
 
-            SqlDataAdapter da = new SqlDataAdapter(sqlstr, WebApplication.Global.connection);
-            da.Fill(ds);
+            SqlDataAdapter da = new SqlDataAdapter(sqlstr, connection);
+            da.Fill(dt);
 
-            GridView1.DataSource = ds;
+            GridView1.DataSource = dt;
             GridView1.DataBind();
-            con.Close();
         }
     }
 }

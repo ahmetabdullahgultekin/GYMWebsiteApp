@@ -13,16 +13,25 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection con = WebApplication.Global.connection;
-            DataSet ds = new DataSet();
+            SqlConnection connection = new SqlConnection(WebApplication.Global.connectionStr);
+            try
+            {
+                connection.Open();
+            }
+            catch
+            {
+                connection.Close();
+                throw;
+            }
+
+            DataTable dt = new DataTable();
             string sqlstr = "select * from Sale";
 
-            SqlDataAdapter da = new SqlDataAdapter(sqlstr, WebApplication.Global.connection);
-            da.Fill(ds);
+            SqlDataAdapter da = new SqlDataAdapter(sqlstr, connection);
+            da.Fill(dt);
 
-            GridView1.DataSource = ds;
+            GridView1.DataSource = dt;
             GridView1.DataBind();
-            con.Close();
         }
     }
 }
