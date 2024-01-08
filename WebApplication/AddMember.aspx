@@ -2,7 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        form {
+
+        #dataForm {
             margin-top: 150px;
             margin-left: 35%;
             margin-right: 5%;
@@ -10,10 +11,13 @@
             max-width: 50%;
             width: 50%;
             display: block;
+            justify-content: center;
+            align-items: center;
         }
 
         label {
             display: block;
+            margin: auto;
             margin-bottom: 10px;
             font-size: 18px;
             font-weight: bold;
@@ -21,7 +25,6 @@
             transition: color 0.3s ease-in-out;
         }
 
-            /* Add a subtle border-bottom for a more distinct look */
             label::after {
                 content: '';
                 display: block;
@@ -53,8 +56,10 @@
 
         input {
             display: block;
+            margin: auto;
+            max-width: 100%;
+            width: 100%;
         }
-
     </style>
 </asp:Content>
 
